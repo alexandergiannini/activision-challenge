@@ -1,0 +1,57 @@
+body {
+    background-image: url('./hero_img_01.jpg');
+}
+
+.content-text {
+    margin-top: 310px;
+    margin-right: 400px;
+    margin-left: 400px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: white;
+}
+
+.learn-more-btn {
+    font-size: 50px;
+    color: grey;
+}
+
+.close-btn {
+    margin-bottom: 50px;
+}
+
+.modal-overlay {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.modal-overlay {
+    visibility: hidden;
+}
+
+.modal-content {
+    visibility: hidden;
+    display: block;
+}
+
+.modal-overlay.active {
+    visibility: visible;
+}
+
+.modal-content.active {
+    visibility: visible;
+}
+
+@media screen and (max-width: 575px) {
+    body {
+        background-image: url('./Hero_img_mobile_01.jpg');
+    }
+
+    .content-text {
+        text-align: center;
+        margin-left: 20px;
+        /* margin-right: 50px; */ 
+        font-size: 20px;
+        width: 90%;
+    }
+}
