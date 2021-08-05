@@ -27,7 +27,7 @@ body {
 .close-btn {
     margin-top: 5px;
     margin-bottom: 5px;
-    font-size: 40px;
+    font-size: 35px;
 }
 
 .modal-overlay {
@@ -129,9 +129,8 @@ iframe {
     }
 
     .close-btn {
-        margin-top: 5px;
         margin-bottom: 5px;
-        font-size: 13px;
+        font-size: 10px;
         margin-top: 1.5px;
     }
 }
