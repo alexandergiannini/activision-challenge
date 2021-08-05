@@ -17,7 +17,7 @@ body {
 .learn-more-btn {
     text-align: center;
     font-size: 40px;
-    color: grey;
+    color: rgb(75, 75, 75);
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 60px;
@@ -126,5 +126,11 @@ iframe {
     .learn-more-btn {
         margin-top: 10px;
         font-size: 30px;
+    }
+
+    .close-btn {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        font-size: 15px;
     }
 }
