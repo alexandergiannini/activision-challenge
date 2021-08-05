@@ -8,25 +8,37 @@ body {
     margin-left: 400px;
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
+    font-weight: 300; 
     color: white;
 }
 
 .learn-more-btn {
-    font-size: 50px;
+    text-align: center;
+    font-size: 45px;
     color: grey;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 45px;
+    padding-right: 45px;
 }
 
 .close-btn {
-    margin-bottom: 50px;
-}
-
-.modal-overlay {
-    text-align: center;
-    margin-top: 100px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 40px;
 }
 
 .modal-overlay {
     visibility: hidden;
+    text-align: center;
+    margin-top: 100px;
+    position: absolute;
+    background: black;
+    border: 3px solid #666666;
+    width: 50%;
+    height: 50%;
+    left: 25%;
+    /* opacity: 0.8 */
 }
 
 .modal-content {
@@ -36,13 +48,50 @@ body {
 
 .modal-overlay.active {
     visibility: visible;
+    text-align: center;
+    top: 50px;
 }
 
 .modal-content.active {
     visibility: visible;
 }
 
-@media screen and (max-width: 575px) {
+h1 {
+    margin-top: 200px;
+    text-align: center;
+    color: white;
+}
+
+iframe {
+    margin-bottom: 100px;
+    display: inline-block;
+}
+
+@media screen and (max-width: 1093px) {
+    iframe {
+        width: 400px
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .content-text {
+        text-align: center;
+        width: 50%;
+        margin-left: 200px;
+    }
+}
+
+@media screen and (max-width: 799px) {
+    iframe {
+        width: 300px;
+    }
+
+    /* .modal-overlay {
+        height: 100%
+    } */
+}
+
+@media screen and (max-width: 617px) {
     body {
         background-image: url('./Hero_img_mobile_01.jpg');
     }
@@ -53,5 +102,20 @@ body {
         /* margin-right: 50px; */ 
         font-size: 20px;
         width: 90%;
+    }
+
+    iframe {
+        width: 300px;
+    }
+
+    .modal-overlay {
+        width: 100%;
+        margin-top: 400px;
+        /* position: fixed; */
+  /* top: 50%; */
+        bottom: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
     }
 }
